@@ -11,6 +11,7 @@ class Splay:
         elif(init_tree_type == 'right'):
             self.right_weighted_tree_gen(arr)
 
+    # Iterates through binary tree pathing to target value, if End of tree is encountered, splays on the 'closest' value, being the previous node encountered
     def find(self, value):
         if(self.root):
             previous = None
